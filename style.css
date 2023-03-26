@@ -403,7 +403,7 @@ input::-webkit-input-placeholder {
 .heading {
     max-width: 1200px;
     color: #ffffff;
-    margin: 0 auto;
+    margin: 20px auto;
     font-size: 1.3rem;
     text-transform: uppercase;
     border-bottom: 1px solid red;
@@ -415,11 +415,7 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1rem;
-    margin-top: 2rem;
-}
-
-.coming-container.swiper {
-    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .coming-container{
@@ -428,9 +424,19 @@ input::-webkit-input-placeholder {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, auto));
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+
 }
 
+
+.second{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+}
 
 .box .box-img {
     height: 270px;

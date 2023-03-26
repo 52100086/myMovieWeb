@@ -265,6 +265,8 @@
                 <span>120 min | Action</span>
             </div>
 
+
+
         </div>
     </section>
 
@@ -272,7 +274,7 @@
     <section class="coming" id="coming">
         <h2 class="heading">Upcoming Movies</h2>
         <div class="coming-container swiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper second">
 
 
                 <div class="swiper-slide box">
@@ -324,6 +326,39 @@
                 <div class="swiper-slide box">
                     <div class="box-img">
                         <img src="images/alien.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Alien</a>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/lotr1.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Alien</a>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/jurassic-park.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Alien</a>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/star-war.jpg" alt="">
                         <div class="box-overlay">
                             <i class="fa-solid fa-play"></i>
                         </div>
@@ -403,12 +438,10 @@
 
 
         var swiper2 = new Swiper(".coming-container", {
-            spacebetween: 20,
             loop: true,
             autoplay:{
                 delay: 55000,
                 disableOnInteraction: false,
-
             },
             centeredSlides: true,
             breakpoints: {
