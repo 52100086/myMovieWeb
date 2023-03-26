@@ -1,0 +1,191 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css);
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181616;
+}
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #191212;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.navbar_container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+}
+
+
+.logo_container{
+    color: red;
+    font-size: 25px;
+    font-family: 'Monoton', cursive;
+    cursor: pointer;
+    margin-right: 15px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+img{
+    max-width: 100%;
+}
+
+.menu_container{
+    flex: 7.5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu_list{
+    display: flex;
+    list-style: none;
+    color: aliceblue;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.menu_item{
+    display: flex;
+    margin: 0 30px;
+}
+
+.menu_list a{
+    font-weight: 550;
+}
+
+
+.menu_list a:hover{
+    color: red;
+}
+
+.menu_list a.btn:hover{
+    color: unset;
+}
+
+.btn{
+    padding: .25rem 1.25rem;
+    font-size: 1.25rem;
+    display: inline-flex;   
+    position: relative;
+    align-items: center;
+}
+
+.btn-hover::before{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    transition: 0.3s ease-out;
+}
+
+.btn-hover:hover::before{
+    width: 65%;
+}
+
+.btn span {
+    z-index: 1;
+}
+
+.hamburger-menu {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 30px;
+    height: 2px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.hamburger::before {
+    top: -10px;
+}
+
+.hamburger::after {
+    bottom: -10px;
+}
+
+.hamburger-menu.active .hamburger {
+    background-color: transparent;
+}
+
+.hamburger-menu.active .hamburger::before {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    left: 6px;
+}
+
+.hamburger-menu.active .hamburger::after {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    left: 6px;
+}
+
+@media only screen and (max-width: 850px) {
+    html {
+        font-size: 12px;
+    }
+
+    .hamburger-menu {
+        display: grid;
+    }
+
+    .menu_list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        padding: 20px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu_container li {
+        margin: 10px 30px;
+    }
+
+    .menu_container.active {
+        left: 0;
+    }
+}

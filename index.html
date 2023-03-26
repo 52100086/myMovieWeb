@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css%22%3E" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- Font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:ital,wght@0,100;0,200;0,400;0,700;0,800;0,900;1,300;1,500&display=swap"rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicon  -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+   
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    
+
+    <!------------ Jquery  ----------->
+    <script src="jquery-3.6.3.min.js"></script>
+
+    <!------------ shortIcon  -------->
+    <link rel="shortcut icon" href="images/favicon.jpg">
+
+    <!-- Title  -->
+    <title>Filmo</title>
+</head>
+
+<body>
+
+        <!--------------- Navigation bar  ------------->
+        <nav>
+            <nav class = "navbar">
+                <nav class="navbar_container">
+                    <a href="#" class="logo_container">Filmo</a>
+                    <nav class="menu_container">
+                        <!-- search -->
+                          <div class="search-bar">
+                            <input type="text" placeholder="Search...">
+                            <p>┊&nbsp;&nbsp;</p>
+                            <button type="submit" class = "sidebar_items fa-solid fa-magnifying-glass"></button>
+                          </div>
+                        <!-- menu -->
+                          <div class="menu_item">
+                            <ul class="menu_list" id="menu_list"> 
+                                <div class="dropdown" onmouseenter="Dropdown()" onmouseleave="closeDropdown()">
+                                    <button class="dropbtn">GENRE</button>
+                                    <div class="dropdown-content" id="myDropdown">
+                                      <a href="#">Action</a>
+                                      <a href="#">Horror</a>
+                                      <a href="#">Romantic</a>
+                                    </div>
+                                </div> 
+
+                                <li >
+                                    <a href="#" class = "btn btn-hover">
+                                        <span>Sign in</span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </div>
+                        <!-- account -->
+
+                        <div class="avatar-container">
+                            <img src="images/profile_picture.jpg" alt="avatar" class="avatar">
+                            <div class="dropdown-menu">
+                                <a href="#">Edit</a>
+                                <a href="#">Saved</a>
+                                <a href="#">History</a>
+                            </div>
+                          </div>
+                          
+
+
+                          
+                          
+                </nav>
+            </nav>
+
+        </nav>
+
+    
+    <!------------- Movies swiper  ----------->
+    <div class="swiper mySwiper">
+    
+        <div class="swiper-wrapper">
+
+            <!-- Slide 1 -->
+            <div class="swiper-slide first">
+                <div class="image">
+                    <div class="black">
+                        <h1>Chernobyl</h1>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class = "description">
+                            In April 1986, an explosion at the Chernobyl nuclear power plant in the Union of Soviet Socialist Republics becomes one of the world's worst man-made catastrophes.
+                        </p>
+                        <div class="genre">
+                            <a href="#" class="category">Tragedy</a>
+                            <a href="#" class="category">Drama</a>
+                            <a href="#" class="category">History</a>
+                        </div>
+                        <div class="watch">
+                            <i class="fa-solid fa-circle-play fa-beat"></i>
+                            <p>Watch</p>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <!-- <video class="embed-responsive-item" muted autoplay loop src="videos/chernobyl.mp4" type="video/mp4"></video> -->
+                        <img src="images/chernobyl.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="swiper-slide first">
+                <div class="image">
+                    <div class="black">
+
+                        <h1>The Boys</h1>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class = "description">
+                            The Boys is set in a universe where super-powered individuals are recognized as heroes by the general public and work for a powerful corporation known as Vought International, which markets and monetizes them
+                        </p>
+                        <div class="genre">
+                            <a href="#" class="category">Crime</a>
+                            <a href="#" class="category">Action</a>
+                            <a href="#" class="category">Superhero</a>
+
+                        </div>
+                        <div class="watch">
+                            <i class="fa-solid fa-circle-play fa-beat"></i>
+                            <p>Watch</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <img src="images/the_boys.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <div class="image">
+                    <div class="black">
+
+                        <h1>The Boys</h1>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <p class = "description">
+                            The Boys is set in a universe where super-powered individuals are recognized as heroes by the general public and work for a powerful corporation known as Vought International, which markets and monetizes them
+                        </p>
+                        <div class="genre">
+                            <a href="#" class="category">Comic</a>
+                            <a href="#" class="category">Action</a>
+                            <a href="#" class="category">Superhero</a>
+
+                        </div>
+                        <div class="watch">
+                            <i class="fa-solid fa-play"></i>
+                            <p>Watch</p>
+                        </div>
+
+                    </div>
+                    
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <img src="images/spider_man.jpg" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!------------ Movie's Cards Slider  ------------>
+    <section class = "movies" id = "movies">
+        <h2 class = "heading">Trending</h2>
+        <div class="movies-container">
+
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/joker.jpg" alt="">
+                    <div class="box-overlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <a href="">Joker</a>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/endgame.jpg" alt="">
+                    <div class="box-overlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                
+                <a href="">Endgame</a>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/inception.jpg" alt="">
+                    <div class="box-overlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <a href="">Inception</a>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/godzilla.jpg" alt="">
+                    <div class="box-overlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <a href="">Godzilla</a>
+                <span>120 min | Action</span>
+            </div>
+
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/alien.jpg" alt="">
+                    <div class="box-overlay">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <a href="">Alien</a>
+                <span>120 min | Action</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Upcoming movies -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Upcoming Movies</h2>
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/joker.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Joker</a>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/endgame.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    
+                    <a href="">Endgame</a>
+                    <span>120 min | Action</span>
+                </div>
+    
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/inception.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Inception</a>
+                    <span>120 min | Action</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/godzilla.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Godzilla</a>
+                    <span>120 min | Action</span>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="images/alien.jpg" alt="">
+                        <div class="box-overlay">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                    <a href="">Alien</a>
+                    <span>120 min | Action</span>
+                </div>
+            
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- footer -->
+
+    <div class="footer_box">
+        <div class="infor_container">
+            <div class="above_detail">
+                <div class="text_intro">FILMO</div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>     
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+                <hr width="100%" color="#acabab"/>
+                <div class ="link_items">
+                    <table class="table">
+                        <tbody>
+                          <tr>
+                            <td><a href="">Chính sách bảo mật</a></td>
+                            <td><a href="">Bảo vệ quyền riêng tư</a></td>
+                            <td><a href="">Điều khoản sử dụng</a></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                          <tr>
+                            <td><a href="">Hợp tác quảng cáo</a></td>
+                            <td><a href="">Liên hệ với nhà phát triển</a></td>
+                            <td><a href="">Phản ánh ý kiến</a></td>
+                          </tr>
+                          <tr><td><br></td></tr>
+                          <tr>
+                            <td><a href="">Chính sách khuyến mãi</a></td>
+                            <td><a href="">Trung tâm hỗ trợ</a></td>
+                            <td><a href="">Thông tin công ty</a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!------------ JavaScript  ----------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Swiper
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+
+        var swiper2 = new Swiper(".coming-container", {
+            spacebetween: 20,
+            loop: true,
+            autoplay:{
+                delay: 55000,
+                disableOnInteraction: false,
+
+            },
+            centeredSlides: true,
+            breakpoints: {
+                0:{
+                    slidesPerView: 2,
+                },
+                568:{
+                    slidesPerView: 3,
+                },
+                768:{
+                    slidesPerView: 4,
+                },
+                968:{
+                    slidesPerView: 5,
+                },
+            }
+        });
+
+    </script>
+
+    <script src="app.js"></script>
+
+
+
+
+</body>
+
+</html>
