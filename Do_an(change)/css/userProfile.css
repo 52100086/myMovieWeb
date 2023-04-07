@@ -293,13 +293,50 @@ input::-webkit-input-placeholder {
 
 
 
+/*-------------- Content -------------- */
 
-.user-container{
+.wrap-left{
+    position: relative;
+    width: 250px;
+    height: 100vh;
+    margin-top: 70px;
+}
+
+.wrap-left .image-wrapper img{
+
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.wrap-left .image-wrapper{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, rgb(85, 50, 50)); 
+
+}
+
+.wrap-left .image-wrapper .user-name{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    
+}
+
+
+
+
+
+
+
+/* .user-container{
     position: relative;
     height: 100vh;
     max-width: 800px;
     margin: 0 auto;
-    display: flex;
     justify-content: space-between;
     padding-top: 100px;
 
@@ -343,7 +380,7 @@ input::-webkit-input-placeholder {
 
 .user-activity li {
     margin-bottom: 10px;
-}
+} */
 
 
 

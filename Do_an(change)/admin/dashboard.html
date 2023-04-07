@@ -18,14 +18,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styleDash.css">
+    <link rel="stylesheet" href="dashboard.css">
     <link rel="shortcut icon" href="images/favicon.jpg">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="#" class="logo_container text-intro">FILMO</a>
+            <a href="#" class="logo_container text-intro mr-auto">FILMO</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,8 +39,8 @@
                             Quản lý phim
                         </a>
                         <div class="dropdown-menu bg-dark">
-                            <a class="dropdown-item" href="#">Danh sách phim</a>
-                            <a class="dropdown-item" href="#">Thêm mới phim</a>
+                            <a class="dropdown-item" href="filmManagement.php">Danh sách phim</a>
+                            <a class="dropdown-item" href="formAddFilm.php">Thêm mới phim</a>
                             <a class="dropdown-item" href="#">Quản lý thể loại</a>
                         </div>
                     </li>
@@ -66,19 +66,20 @@
                             <a class="dropdown-item" href="#">Số lượt đánh giá</a>
                         </div>
                     </li>
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="false">
+                            Cài đặt
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right bg-dark">
+                            <button class="dropdown-item" type="button">Xem thông tin tài khoản</button>
+                            <button class="dropdown-item" type="button">Đăng xuất</button>
+                        </div>
+                    </div>
                 </ul>
             </div>
 
-            <div class="btn-group ">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
-                    aria-expanded="false">
-                    Cài đặt
-                </button>
-                <div class="dropdown-menu dropdown-menu-right bg-dark">
-                    <button class="dropdown-item" type="button">Xem thông tin tài khoản</button>
-                    <button class="dropdown-item" type="button">Đăng xuất</button>
-                </div>
-            </div>
+
             </div>
         </nav>
     </header>
